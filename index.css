@@ -495,3 +495,44 @@ img{
     align-items: center;
     margin-bottom: var(--mb-2-5);
 }
+
+
+/* =========== MY SKILLS ============= */
+#skills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#skills h3{
+    text-align: center;
+}
+
+#skills img{
+    width: 80%;
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    max-height: 80%;
+    
+}
+
+#skills div{
+    border: 1px solid red;
+    /* margin: auto; */
+    padding: auto;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
