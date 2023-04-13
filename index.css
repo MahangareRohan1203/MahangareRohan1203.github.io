@@ -636,8 +636,10 @@ img{
     color: #ffff;
 }
 
-
-
+/* =================== for project ================ */
+.project-card{
+    margin-top: 600px;
+}
 
 
 
