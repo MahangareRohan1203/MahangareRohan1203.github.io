@@ -83,7 +83,8 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+    /* PLEASE UNCOMMENT IT LATER */
 }
 
 body{
@@ -501,7 +502,7 @@ img{
 #skills{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+    gap:30px;
 }
 
 #skills h3{
