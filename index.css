@@ -501,30 +501,37 @@ img{
 #skills{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 30px;
 }
 
 #skills h3{
     text-align: center;
 }
 
-#skills img{
-    width: 80%;
-    display: block;
-    max-width: 80%;
-    margin: auto;
-    max-height: 80%;
+/* #skills img{
+   
     
-}
+} */
 
 #skills div{
-    border: 1px solid red;
-    /* margin: auto; */
+    /* border: 1px solid red; */
     padding: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.123);
+    border-radius: 20px;
 }
 
 
+.skills-card-img{
+    display: block;
+    margin:auto;   
+    max-width: 50%;
+    max-height: 50%;
 
+}
 
 /* ================ CONTACT CONTAINER */
 
@@ -1118,6 +1125,13 @@ img{
         width: 180px;
     }
 
+    #skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    
+
 }
 
 
@@ -1171,13 +1185,9 @@ img{
     .about__container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+   
 }
-
-
-
-
-
-
 
 
 
@@ -1264,6 +1274,7 @@ img{
     .about__buttons{
         justify-content: initial;
     }
+
 }
 
 
