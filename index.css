@@ -83,8 +83,7 @@
 }
 
 html{
-    /* scroll-behavior: smooth; */
-    /* PLEASE UNCOMMENT IT LATER */
+    scroll-behavior: smooth;
 }
 
 body{
@@ -545,6 +544,13 @@ img{
     margin-bottom: var(--mb-2);
 }
 
+.contact_message {
+    text-align: left;
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-2);
+}
+
 .contact__icon{
     font-size: 2rem;
     color:var(--first-color);
@@ -581,6 +587,14 @@ img{
     border:none;
     outline: none;
     padding: .25rem .5rem .5rem 0;
+}
+
+.contact_form {
+    width: 500px;
+}
+
+.contact_inputs {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* ===================== FOOTER =============== */
@@ -1183,7 +1197,7 @@ img{
         order: 1;
         justify-content: center;
     }
-    .about__container{
+    .about__container, .contact__container{
         grid-template-columns: repeat(2, 1fr);
     }
 
