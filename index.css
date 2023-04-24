@@ -1375,10 +1375,10 @@ img{
     .home__social{
         transform: translateX(-6rem);
     }
-    .home__container{
-        margin-top: -150px;
+    /* .home__container{
+        /* margin-top: 150px; */
       
-    }
+    } */
 /* home container I have created in this & set negative */
     
 }
