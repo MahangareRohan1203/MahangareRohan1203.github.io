@@ -544,12 +544,12 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-.contact_message {
+/* .contact_message {
     text-align: left;
     color: var(--text-color-light);
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-2);
-}
+} */
 
 .contact__icon{
     font-size: 2rem;
@@ -660,7 +660,12 @@ img{
 
 /* =================== for project ================ */
 .project-card{
-    margin-top: 600px;
+    /* margin-top: 600px; */
+    border: 1px solid red;
+    width:60%;
+    margin:auto;
+    text-align: center;
+    margin:0px auto 30px auto;
 }
 
 
@@ -1375,10 +1380,10 @@ img{
     .home__social{
         transform: translateX(-6rem);
     }
-    /* .home__container{
+    /* .home__container{ */
         /* margin-top: 150px; */
       
-    } */
+    /* } */
 /* home container I have created in this & set negative */
     
 }
