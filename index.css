@@ -544,12 +544,12 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-/* .contact_message {
+.contact_message {
     text-align: left;
     color: var(--text-color-light);
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-2);
-} */
+}
 
 .contact__icon{
     font-size: 2rem;
@@ -668,9 +668,24 @@ img{
     margin:0px auto 30px auto;
 }
 
+.stats_container div{
+    margin:auto;
+    /* border: 2px solid red; */
+    margin:30px auto;
+}
 
+.stats_container img{
+    display: block; 
+    margin:auto
+}
 
-
+.stats_container{
+    /* border: 2px solid blue; */
+    width: 80%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 
 
@@ -1205,8 +1220,6 @@ img{
     .about__container, .contact__container{
         grid-template-columns: repeat(2, 1fr);
     }
-
-   
 }
 
 
@@ -1380,6 +1393,14 @@ img{
     .home__social{
         transform: translateX(-6rem);
     }
+
+    .contact_form{
+        width: 460px;
+    }
+
+    /* .contact__inputs{
+        grid-template-columns: repeat(2, 1fr);
+    } */
     /* .home__container{ */
         /* margin-top: 150px; */
       
