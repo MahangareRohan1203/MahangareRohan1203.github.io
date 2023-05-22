@@ -33,14 +33,14 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 
-    GitHubCalendar(".calendar", "MahangareRohan1203");
+    // GitHubCalendar(".calendar", "MahangareRohan1203");
 
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "MahangareRohan1203", { responsive: true });
+    // // or enable responsive functionality:
+    // GitHubCalendar(".calendar", "MahangareRohan1203", { responsive: true });
 
-    // Use a proxy
-    GitHubCalendar(".calendar", "MahangareRohan1203", {
-       proxy (MahangareRohan1203) {
-         return fetch(`https://your-proxy.com/github?user=${MahangareRohan1203}`)
-       }
-    }).then(r => r.text())
+    // // Use a proxy
+    // GitHubCalendar(".calendar", "MahangareRohan1203", {
+    //    proxy (MahangareRohan1203) {
+    //      return fetch(`https://your-proxy.com/github?user=${MahangareRohan1203}`)
+    //    }
+    // }).then(r => r.text())
