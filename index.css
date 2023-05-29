@@ -1292,6 +1292,7 @@ img{
     }
 
     .about__container{
+        width: 90%;
         column-gap: 5rem;
     }
 
