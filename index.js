@@ -29,18 +29,9 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-
-
-
-
-    // GitHubCalendar(".calendar", "MahangareRohan1203");
-
-    // // or enable responsive functionality:
-    // GitHubCalendar(".calendar", "MahangareRohan1203", { responsive: true });
-
-    // // Use a proxy
-    // GitHubCalendar(".calendar", "MahangareRohan1203", {
-    //    proxy (MahangareRohan1203) {
-    //      return fetch(`https://your-proxy.com/github?user=${MahangareRohan1203}`)
-    //    }
-    // }).then(r => r.text())
+    var typed = new Typed(".typing", {
+        strings: ["A Full Stack Developer","A Java Backend Developer", "A Sport Enthusiast"],
+        typeSpeed: 100,
+        backSpeed: 90,
+        loop: true,
+    })

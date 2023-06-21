@@ -61,20 +61,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============== base ======================*/
 *{
     box-sizing: border-box;
@@ -114,7 +100,9 @@ img{
 
 /* =========================== reusable ===================== */
 .section{
-    padding: 2rem 0 4rem ;
+    /* padding: 2rem 0 4rem ; */
+    margin-top: 25px;
+    padding-top: 25px;
 }
 
 .section__title{
@@ -138,6 +126,7 @@ img{
     max-width: 768px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
+    /* border: 1px solid hotpink; */
 }
 
 .grid{
@@ -332,6 +321,10 @@ img{
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+
+    /* adding new  */
+    margin-top: 15px;
+    /*  end of new*/
 }
 
 .button:hover{
@@ -351,7 +344,7 @@ img{
 
 /* ======================= ABOUT ======================= */
 .about__img{
-    width: 400px;
+    width: 200px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
@@ -565,7 +558,8 @@ img{
 /* =================== for project ================ */
 .project-card{
     /* margin-top: 600px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width:60%;
     margin:auto;
     text-align: center;
@@ -745,10 +739,30 @@ img{
     /* .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
     } */
-    /* .home__container{ */
-        /* margin-top: 150px; */
-      
-    /* } */
+    .home__container{ 
+        margin-top: -120px;
+    }
+
+    .section{
+        /* padding: 2rem 0 4rem ; */
+        /* margin-top: 1,5rem;
+        padding-top: 1.5rem; */
+    }
 /* home container I have created in this & set negative */
     
+}
+
+
+
+@media screen and (max-width: 768px){
+    #skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .stats_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
