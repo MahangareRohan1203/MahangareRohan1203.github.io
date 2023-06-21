@@ -130,9 +130,9 @@
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My Introduction</span>
 
-                <div class="about__container container grid" style="width: 100%; column-gap: 0px;">
+                <div class="about__container container grid" style="column-gap: 90px;" id="aboutAdjust"> 
                     <!-- <img src="Images/Rohan.jpg" alt="" class="about__img  home-img"> -->
-                    <img src="./Extras/about.avif" alt="Error" class="about__img home-img" style="width: 95%;">
+                    <img src="./Extras/about.avif" alt="Error" class="about__img home-img" style="width:95%;">
                             <!-- added here user-detail-intro  -->
                     <div class="about__data">
            
@@ -159,7 +159,7 @@
                                 </div>
                             </div>
 
-                            <div class="about_buttons">
+                            <div class="about_buttons" style="display: flex;justify-content: center;">
                                 <!-- <button class="button" id="resume-button-2"> -->
                                     <a href="./Extras/Rohan-Mahangare-Resume.pdf" class="button button--flex" id="resume-link-2"
                                         onclick="window.open('./Extras/Rohan-Mahangare-Resume.pdf')" target="_blank" download>
@@ -236,7 +236,31 @@
             <img class="skills-card-img" src="./Extras/github.png" alt="">
             <h3 class="skills-card-name">GitHub </h3>
         </div>
-
+        <!-- Intellij -->
+        <div>
+            <img class="skills-card-img" src="./Extras/IntelliJ.jpg" alt="">
+            <h3 class="skills-card-name">IntelliJ </h3>
+        </div>
+        <!-- postman -->
+        <div>
+            <img class="skills-card-img" src="./Extras/postman.png" alt="">
+            <h3 class="skills-card-name">Postman</h3>
+        </div>
+        <!-- Git -->
+        <div>
+            <img class="skills-card-img" src="./Extras/git.png" alt="">
+            <h3 class="skills-card-name">Git</h3>
+        </div>
+        <!-- tomcat -->
+        <div>
+            <img class="skills-card-img" src="./Extras/tomcat.png" alt="">
+            <h3 class="skills-card-name">Tomcat</h3>
+        </div>
+        <!-- swagger -->
+        <div>
+            <img class="skills-card-img" src="./Extras/swagger.png" alt="">
+            <h3 class="skills-card-name">Swagger</h3>
+        </div>
     </div>    
 
     <!-- ================ MY PROJECTS ==================== -->
@@ -292,7 +316,7 @@
     </section>
     <div class="stats_container";">
         <div >
-            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=MahangareRohan1203&theme=tokyonight&type=png" alt="">
+            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=MahangareRohan1203&type=png" alt="">
         </div>
         <div>
             <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MahangareRohan1203&hide_progress=false" alt="">
@@ -379,7 +403,7 @@
                         <textarea id="" cols="0" rows="7" class="contact__input" name="message" required="true"></textarea>
                     </div>
 
-                    <button type="submit" style="border-style: none;" >
+                    <button type="submit" style="border-style: none;background: none;" >
                         <a  class="button button--flex">
                             Send Message
                             <i class="uil uil-message button__icon"></i>

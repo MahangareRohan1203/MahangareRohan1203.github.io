@@ -496,11 +496,11 @@ img{
 
 /* ===================== FOOTER =============== */
 .footer{
-    padding-top: 2rem;
+    padding-top: 0rem;
 }
 
 .footer__container{
-    row-gap: 3.5rem;
+    row-gap: 1.5rem;
 }
 
 .footer__bg{
