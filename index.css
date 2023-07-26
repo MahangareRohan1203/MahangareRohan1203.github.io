@@ -496,12 +496,12 @@ img{
 }
 
 .footer__container{
-    row-gap: 1.5rem;
+    row-gap: 1rem;
 }
 
 .footer__bg{
     background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
+    padding: 1.5rem 0 0.5rem;
 }
 
 .footer__title{
@@ -629,6 +629,11 @@ img{
     .about__container, .contact__container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #mycalender{
+        width:90%;
+        /* margin:30px auto; */
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -743,6 +748,11 @@ img{
         /* padding: 2rem 0 4rem ; */
         /* margin-top: 1,5rem;
         padding-top: 1.5rem; */
+    }
+
+    #mycalender{
+        width:85%;
+        margin:30px auto;
     }
 }
 
