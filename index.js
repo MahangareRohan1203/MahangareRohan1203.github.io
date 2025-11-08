@@ -35,3 +35,24 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
         backSpeed: 90,
         loop: true,
     })
+
+let pool = {};
+fetch("api.json").then(res => res.json()).then(data =>{
+    pool = data;
+    //console.log(pool?.RESUME_URL)
+
+    document.getElementById("resume-link-2").href = pool.RESUME_URL_DOWNLOAD_DIRECT_LINK;
+
+    document.getElementById("resume-link-2").addEventListener("click", ()=>{
+              window.open(pool.RESUME_URL, "_blank");
+    });
+
+
+    // for nav-bar resume
+    
+    document.getElementById("resume-link-1").href = pool.RESUME_URL_DOWNLOAD_DIRECT_LINK;
+
+    document.getElementById("resume-link-1").addEventListener("click", ()=>{
+              window.open(pool.RESUME_URL, "_blank");
+    });
+})
