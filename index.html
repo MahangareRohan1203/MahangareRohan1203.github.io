@@ -135,37 +135,38 @@
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
 
-            <div class="about__container container grid" style="column-gap: 90px;" id="aboutAdjust">
+            <div class="about__container container grid" id="aboutAdjust">
                 <!-- <img src="Images/Rohan.jpg" alt="" class="about__img  home-img"> -->
-                <img src="./Extras/about.avif" alt="Error" class="about__img home-img" style="width:95%;">
+                <img src="./Extras/about.avif" alt="Error" class="about__img home-img">
                 <!-- added here user-detail-intro  -->
                 <div class="about__data">
 
                     <p class="about_description" id="user-detail-intro" style="text-align: justify;">
-                        Backend Developer with experience in Java, Hibernate, Spring Boot, and REST APIs. 
-                        Skilled in building scalable systems and quick to adapt to new technologies. Focused on delivering efficient and reliable backend solutions.
+                        I transitioned from a background in <b>Mathematics</b> to <b>Software Engineering</b>, leveraging my analytical skills to build robust backend systems. After completing my B.Sc., I pursued intensive Full Stack Web Development training at Masai School, where I specialized in the Java ecosystem. 
+                        <br><br>
+                        My experience includes developing scalable applications like the 'Veggie Market' and 'Crime Information System,' focusing on Java, Spring Boot, and RESTful APIs. I am dedicated to continuous growth and delivering high-quality, innovative technical solutions.
                     </p>
-
                     <!-- end of extra one -->
 
                     <div class="about__info">
                         
-                        <div>
+                        <div class="about__box">
+                            <i class="uil uil-award about__icon"></i>
                             <span class="about__info-title">8+</span>
                             <span class="about__info-name">Projects <br>Completed</span>
                         </div>
 
-                        <div>
+                        <div class="about__box">
+                            <i class="uil uil-comment-dots about__icon"></i>
                             <span class="about__info-title">200+</span>
-                            <span class="about__info-name">Hours <br>Communication Practice </span>
+                            <span class="about__info-name">Hours <br>Communication</span>
                         </div>
 
-                        <div>
+                        <div class="about__box">
+                            <i class="uil uil-brackets-curly about__icon"></i>
                             <span class="about__info-title">2400+</span>
-                            <span class="about__info-name">Hours <br>Coding Experience</span>
+                            <span class="about__info-name">Hours <br>Coding</span>
                         </div>
-
-                       
                     </div>
 
                     <div class="about_buttons" style="display: flex;justify-content: center;">
@@ -178,222 +179,214 @@
                 </div>
             </div>
         </section>
-        <!-- ADDING EXPERIENCE -->
-         <!-- <section id="experience" >
-  <h2 class="section__title" style="margin-bottom: 0;">Experience</h2>
-  <div class="section">
-    <h2 class="section__subtitle">Backend Developer</h2>
-    <p >IoT Solutions Pvt. Ltd. | May 2023 – Present</p>
-    <ul style="margin-top: 8px;">
-      <li>Developed and maintained REST APIs using Spring Boot & Hibernate.</li>
-      <li>Optimized PostgreSQL queries to improve response time.</li>
-      <li>Automated API regression testing using Pentaho and Node-RED.</li>
-      <li>Collaborated with frontend team on React-based booking system.</li>
-    </ul>
-  </div>
-</section> -->
+
+        <!-- ======================== QUALIFICATION ======================== -->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container grid">
+                <!-- Education -->
+                <div class="qualification__content">
+                    <h3 class="qualification__header">
+                        <i class="uil uil-graduation-cap"></i> Education
+                    </h3>
+
+                    <div class="qualification__list">
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Full Stack Web Development</h3>
+                            <span class="qualification__subtitle">Masai School, Bengaluru</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i> 10/2022 - Present
+                            </div>
+                        </div>
+
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">B.Sc Mathematics</h3>
+                            <span class="qualification__subtitle">K.L.E. College, Kalamboli</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i> 07/2019 - 03/2022
+                            </div>
+                            <span class="qualification__subtitle" style="margin-top: 0.25rem;">CGPI: 9.32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="qualification__content">
+                    <h3 class="qualification__header">
+                        <i class="uil uil-briefcase-alt"></i> Experience
+                    </h3>
+
+                    <div class="qualification__list">
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Backend Developer</h3>
+                            <span class="qualification__subtitle">A.T.E Enterprises Pvt. Ltd</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i> May 2024 - Till now
+                            </div>
+                            <p class="qualification__description" style="margin-top: 0.75rem; font-size: var(--smaller-font-size); color: var(--text-color);">
+                                Contributing to backend development and building efficient solutions within the organization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-- ======================== SKILLS ======================== -->
         <section class="skills section" id="skills2">
-            <h2 class="section__title">My Tools & Skills</h2>
-            <span class="section__subtitle">Tools I work with</span>
+            <h2 class="section__title">Skills & Expertise</h2>
+            <span class="section__subtitle">My technical and interpersonal strengths</span>
+
+            <div id="skills-container" class="container" style="margin-bottom: 3rem;">
+                <h3 class="skills__subtitle-category">Technical Skills</h3>
+                <div class="skills__group">
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/java_logo_new.png" alt="">
+                        <h3 class="skills-card-name">Java</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/springboot_logo.png" alt="">
+                        <h3 class="skills-card-name">Spring Boot</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/spring_logo.png" alt="">
+                        <h3 class="skills-card-name">Spring</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/hibernate_logo.png" alt="">
+                        <h3 class="skills-card-name">Hibernate</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/microservices.png" alt="">
+                        <h3 class="skills-card-name">Microservices</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/RestAPI.png" alt="">
+                        <h3 class="skills-card-name">REST API</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/kafka.png" alt="">
+                        <h3 class="skills-card-name">Kafka</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/mysqlcolor.png" alt="">
+                        <h3 class="skills-card-name">MySQL</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/algorithm.png" alt="">
+                        <h3 class="skills-card-name">Data Structures & Algorithms</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/maven.png" alt="">
+                        <h3 class="skills-card-name">Maven</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/git.png" alt="">
+                        <h3 class="skills-card-name">Git</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/linux.png" alt="">
+                        <h3 class="skills-card-name">Linux</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/spring_ai.png" alt="">
+                        <h3 class="skills-card-name">Spring AI</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/docker.png" alt="">
+                        <h3 class="skills-card-name">Docker</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/React.png" alt="">
+                        <h3 class="skills-card-name">React.js</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <img class="skills-card-img" src="./Extras/javascriptcolor.png" alt="">
+                        <h3 class="skills-card-name">JavaScript</h3>
+                    </div>
+                </div>
+
+                <h3 class="skills__subtitle-category">Soft Skills</h3>
+                <div class="skills__group">
+                    <div class="skills-card">
+                        <i class="uil uil-users-alt" style="font-size: 2rem; color: var(--title-color); margin-top: 1rem;"></i>
+                        <h3 class="skills-card-name" style="margin: 1rem 0;">Teamwork</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <i class="uil uil-sync" style="font-size: 2rem; color: var(--title-color); margin-top: 1rem;"></i>
+                        <h3 class="skills-card-name" style="margin: 1rem 0;">Adaptability</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <i class="uil uil-cloud-share" style="font-size: 2rem; color: var(--title-color); margin-top: 1rem;"></i>
+                        <h3 class="skills-card-name" style="margin: 1rem 0;">Remote Collaboration</h3>
+                    </div>
+
+                    <div class="skills-card">
+                        <i class="uil uil-comments-alt" style="font-size: 2rem; color: var(--title-color); margin-top: 1rem;"></i>
+                        <h3 class="skills-card-name" style="margin: 1rem 0;">Communication</h3>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <div id="skills" style="width: 60%; margin: auto;">
-
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Extras/html.png" alt="">
-                <h3 class="skills-card-name">HTML</h3>
-            </div>
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Extras/csscolor.png" alt="">
-                <h3 class="skills-card-name">CSS</h3>
-            </div>
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Extras/javascriptcolor.png" alt="">
-                <h3 class="skills-card-name">JavaScript</h3>
-            </div>
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="">
-                <h3 class="skills-card-name">Java</h3>
-            </div>
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Extras/spring_logo.png" alt="">
-                <h3 class="skills-card-name">Spring</h3>
-            </div>
-
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Extras/hibernate_logo.png" alt="">
-                <h3 class="skills-card-name">Hibernate</h3>
-            </div>
-
-
-            <div>
-                <img class="skills-card-img" src="./Extras/maven.png" alt="">
-                <h3 class="skills-card-name">Maven</h3>
-            </div>
-
-            <div>
-                <img class="skills-card-img" src="./Extras/mysqlcolor.png" alt="">
-                <h3 class="skills-card-name">MySQL</h3>
-            </div>
-
-            <!-- JUnit -->
-            <!-- <div>
-                <img class="skills-card-img" src="./Extras/Junit.png" alt="">
-                <h3 class="skills-card-name">JUnit</h3>
-            </div> -->
-            <!-- Mockito -->
-            <!-- <div>
-                <img class="skills-card-img" src="./Extras/mockito.jpg" alt="">
-                <h3 class="skills-card-name">Mockito</h3>
-            </div> -->
-            <!-- Spring Security -->
-            <!-- <div>
-                <img class="skills-card-img" src="./Extras/springSecurity.webp" alt="">
-                <h3 class="skills-card-name">Spring Security</h3>
-            </div> -->
-            <!-- Ubuntu -->
-                         <!-- postman -->
-            <div>
-                <img class="skills-card-img" src="./Extras/React.png" alt="">
-                <h3 class="skills-card-name">React.js</h3>
-            </div>
-            <!-- Git -->
-            <div>
-                <img class="skills-card-img" src="./Extras/kafka.png" alt="">
-                <h3 class="skills-card-name">Kafka</h3>
-            </div>
-            <!-- tomcat -->
-            <div>
-                <img class="skills-card-img" src="./Extras/tomcat.png" alt="">
-                <h3 class="skills-card-name">Tomcat</h3>
-            </div>
-            <!-- swagger -->
-            <div>
-                <img class="skills-card-img" src="./Extras/swagger.png" alt="">
-                <h3 class="skills-card-name">Swagger</h3>
-            </div>
-
-            <div>
-                <img class="skills-card-img"
-                    src="./Extras/linux.png"
-                    alt="">
-                <h3 class="skills-card-name">Linux</h3>
-            </div>
-
-            <div>
-                <img class="skills-card-img"
-                    src="https://w7.pngwing.com/pngs/512/824/png-transparent-visual-studio-code-hd-logo-thumbnail.png"
-                    alt="">
-                <h3 class="skills-card-name">VS Code</h3>
-            </div>
-
-            <div>
-                <img class="skills-card-img" src="./Extras/github.png" alt="">
-                <h3 class="skills-card-name">GitHub </h3>
-            </div>
-            <!-- Intellij -->
-            <div>
-                <img class="skills-card-img" src="./Extras/IntelliJ.jpg" alt="">
-                <h3 class="skills-card-name">IntelliJ </h3>
-            </div>
-
-        </div>
 
         <!-- ================ MY PROJECTS ==================== -->
         <section class="skills section" id="projects2">
             <h2 class="section__title">My Projects</h2>
             <span class="section__subtitle">Projects that I have worked upon</span>
+
+            <div id="projects" class="container">
+                <!-- Projects will be rendered dynamically from api.json -->
+            </div>
         </section>
-
-        <div id="projects">
-
-            <div class="project-card">
-                <img src="./Extras/ElPolloLoco.png" alt="">
-                <h3 class="project-title">El Pollo Loco Clone</h3>
-                <p class="project-description">Online food delivery website </p>
-                <p class="project-tech-stack"> <b> Tech Stack: </b> HTML | CSS | JavaScript </p>
-                <a class="project-github-link button"
-                    href="https://github.com/MahangareRohan1203/El-Pollo-Loco-Clone" target="_blank">GitHub</a>
-                <a class="project-deployed-link button" href="https://64c1694b81a48f008a27ab69--tubular-stroopwafel-9a2a78.netlify.app/" target="_blank">Deployed</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./Extras/Befit.png" alt="">
-                <h3 class="project-title">JeFit Clone</h3>
-                <p class="project-description">Gym Training & Community Building Website </p>
-                <p class="project-tech-stack"> <b> Tech Stack: </b> HTML | CSS | JavaScript </p>
-                <a class="project-github-link button"
-                    href="https://github.com/MahangareRohan1203/damaged-foot-4937" target="_blank">GitHub</a>
-                <a class="project-deployed-link button" href="https://befit2.netlify.app/" target="_blank">Deployed</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./Extras/CrimeInfo.png" alt="">
-                <h3 class="project-title">Crime Information Management System</h3>
-                <p class="project-description">Maintain Integrated data of Crime & Criminals</p>
-                <p class="project-tech-stack"> <b> Tech Stack: </b> Java | JDBC | MySQL </p>
-                <a class="project-github-link button"
-                    href="https://github.com/MahangareRohan1203/puny-leather-5605" target="_blank">GitHub</a>
-                <a class="project-deployed-link button" href="https://drive.google.com/drive/folders/1TwH_HC35iOmNbGDVx_hDW-0mT_TBDUTM" target="_blank">Video</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./Extras/VeggieMarket.png" alt="">
-                <h3 class="project-title">Online Vegetable Sales Application</h3>
-                <p class="project-description">Buy and Sell vegetables online</p>
-                <p class="project-tech-stack"> <b> Tech Stack: </b> Java | SpringBoot | MySQL | Hibernate | JPQL </p>
-                <a class="project-github-link button"
-                    href="https://github.com/MahangareRohan1203/malicious-liquid-1505" target="_blank">GitHub </a>
-                <a class="project-deployed-link button"
-                    href="https://drive.google.com/drive/folders/1_tH1wN5v6ublnhkgzmkQoKlLSJ6L-JRK?usp=drive_link" target="_blank">Video</a>
-
-            </div>
-        </div>
 
         <!-- ================ GitHub Stats -->
-        <section class="skills section">
+        <!-- <section class="section">
             <h2 class="section__title">Days I have Code</h2>
-            <!-- <span class="section__subtitle">Projects that I have worked upon</span> -->
-        </section>
-        <div class="stats_container" ;">
-            <div>
-                <img id="github-streak-stats"
-                    src="https://github-readme-streak-stats.herokuapp.com/?user=MahangareRohan1203&type=png" alt="">
-            </div>
-            <div>
-                <img id="github-top-langs"
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=MahangareRohan1203&hide_progress=false"
-                    alt="">
-            </div>
-
-
-            <div>
-                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=MahangareRohan1203"
-                    alt="">
-            </div>
-
-        </div>
-
-        <!-- Checking for github calender -->
-        <!-- <div class="calendar" style="width: 80%">
             
-        </div> -->
-    
-        <div class="calendar" id="mycalender">
-            <img style="width:100%;" id="github-contributions"
-            src="https://ghchart.rshah.org/30a14e/MahangareRohan1203" alt="Github chart" />
-        </div>
-    </div>
-        
+            <div class="stats_container container">
+                <div class="stats_item">
+                    <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=MahangareRohan1203&show_icons=true&theme=radical"
+                        alt="GitHub Stats">
+                </div>
+                
+                <div class="stats_item">
+                    <img id="github-streak-stats"
+                        src="https://github-readme-streak-stats.herokuapp.com/?user=MahangareRohan1203&theme=radical" alt="GitHub Streak">
+                </div>
+
+                <div class="stats_item">
+                    <img id="github-top-langs"
+                        src="https://github-readme-stats.vercel.app/api/top-langs?username=MahangareRohan1203&layout=compact&theme=radical"
+                        alt="Top Languages">
+                </div>
+            </div>
+
+            <div class="calendar container" id="mycalender">
+                <img style="width:100%;" id="github-contributions"
+                src="https://ghchart.rshah.org/30a14e/MahangareRohan1203" alt="Github chart" />
+            </div>
+        </section> -->
+
         <!-- ============== CONTACT ME ==================== -->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact Me</h2>

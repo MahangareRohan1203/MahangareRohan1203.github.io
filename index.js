@@ -55,4 +55,23 @@ fetch("api.json").then(res => res.json()).then(data =>{
     document.getElementById("resume-link-1").addEventListener("click", ()=>{
               window.open(pool.RESUME_URL, "_blank");
     });
+
+    // Render Projects
+    const projectsContainer = document.getElementById("projects");
+    if (projectsContainer && pool.PROJECTS) {
+        projectsContainer.innerHTML = pool.PROJECTS.map(project => `
+            <div class="project-card">
+                <img src="${project.image}" alt="${project.title}">
+                <div class="project__data">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <p class="project-tech-stack"> <b> Tech Stack: </b> ${project.techStack} </p>
+                    <div class="project__buttons">
+                        <a class="project-github-link button" href="${project.github}" target="_blank">GitHub</a>
+                        <a class="project-deployed-link button" href="${project.link}" target="_blank">${project.linkLabel}</a>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
 })
