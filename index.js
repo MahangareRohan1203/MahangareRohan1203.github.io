@@ -29,49 +29,68 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-    var typed = new Typed(".typing", {
-        strings: ["A Full Stack Developer","A Java Backend Developer", "A Sport Enthusiast"],
-        typeSpeed: 100,
-        backSpeed: 90,
-        loop: true,
-    })
-
 let pool = {};
-fetch("api.json").then(res => res.json()).then(data =>{
-    pool = data;
-    //console.log(pool?.RESUME_URL)
+fetch("api.json")
+    .then(res => {
+        if (!res.ok) throw new Error('Failed to load project data');
+        return res.json();
+    })
+    .then(data => {
+        pool = data;
 
-    document.getElementById("resume-link-2").href = pool.RESUME_URL_DOWNLOAD_DIRECT_LINK;
+        // Dynamic Home Content
+        if (pool.HOME_DESCRIPTION) {
+            const homeDesc = document.querySelector('.home_description');
+            if (homeDesc) homeDesc.textContent = pool.HOME_DESCRIPTION;
+        }
 
-    document.getElementById("resume-link-2").addEventListener("click", ()=>{
-              window.open(pool.RESUME_URL, "_blank");
-    });
+        // Typed.js Initialization
+        if (pool.TYPED_STRINGS) {
+            new Typed(".typing", {
+                strings: pool.TYPED_STRINGS,
+                typeSpeed: 100,
+                backSpeed: 90,
+                loop: true,
+            });
+        }
 
+        // Resume Links
+        const resumeLink1 = document.getElementById("resume-link-1");
+        const resumeLink2 = document.getElementById("resume-link-2");
 
-    // for nav-bar resume
-    
-    document.getElementById("resume-link-1").href = pool.RESUME_URL_DOWNLOAD_DIRECT_LINK;
+        if (resumeLink1 && pool.RESUME_URL_DOWNLOAD_DIRECT_LINK) {
+            resumeLink1.href = pool.RESUME_URL_DOWNLOAD_DIRECT_LINK;
+            resumeLink1.addEventListener("click", () => {
+                window.open(pool.RESUME_URL, "_blank");
+            });
+        }
 
-    document.getElementById("resume-link-1").addEventListener("click", ()=>{
-              window.open(pool.RESUME_URL, "_blank");
-    });
+        if (resumeLink2 && pool.RESUME_URL_DOWNLOAD_DIRECT_LINK) {
+            resumeLink2.href = pool.RESUME_URL_DOWNLOAD_DIRECT_LINK;
+            resumeLink2.addEventListener("click", () => {
+                window.open(pool.RESUME_URL, "_blank");
+            });
+        }
 
-    // Render Projects
-    const projectsContainer = document.getElementById("projects");
-    if (projectsContainer && pool.PROJECTS) {
-        projectsContainer.innerHTML = pool.PROJECTS.map(project => `
-            <div class="project-card">
-                <img src="${project.image}" alt="${project.title}">
-                <div class="project__data">
-                    <h3 class="project-title">${project.title}</h3>
-                    <p class="project-description">${project.description}</p>
-                    <p class="project-tech-stack"> <b> Tech Stack: </b> ${project.techStack} </p>
-                    <div class="project__buttons">
-                        <a class="project-github-link button" href="${project.github}" target="_blank">GitHub</a>
-                        <a class="project-deployed-link button" href="${project.link}" target="_blank">${project.linkLabel}</a>
+        // Render Projects
+        const projectsContainer = document.getElementById("projects");
+        if (projectsContainer && pool.PROJECTS) {
+            projectsContainer.innerHTML = pool.PROJECTS.map(project => `
+                <div class="project-card">
+                    <img src="${project.image}" alt="${project.title}">
+                    <div class="project__data">
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-description">${project.description}</p>
+                        <p class="project-tech-stack"> <b> Tech Stack: </b> ${project.techStack} </p>
+                        <div class="project__buttons">
+                            <a class="project-github-link button" href="${project.github}" target="_blank">GitHub</a>
+                            <a class="project-deployed-link button" href="${project.link}" target="_blank">${project.linkLabel}</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `).join('');
-    }
-})
+            `).join('');
+        }
+    })
+    .catch(err => {
+        console.error("Error loading portfolio data:", err);
+    });

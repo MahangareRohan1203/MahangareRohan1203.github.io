@@ -100,9 +100,7 @@ img{
 
 /* =========================== reusable ===================== */
 .section{
-    /* padding: 2rem 0 4rem ; */
-    margin-top: 25px;
-    padding-top: 25px;
+    padding: 3rem 0 2rem;
 }
 
 .section__title{
@@ -229,6 +227,10 @@ img{
 /* ======================== HOME ================================= */
 .home__container{
     gap:1rem;
+}
+
+.home.section {
+    padding-top: calc(var(--header-height) + 1.5rem);
 }
 
 .home__content{
@@ -519,8 +521,16 @@ img{
 
 .contact__content{
     background-color: var(--input-color);
-    border-radius: .5rem;
+    border-radius: .75rem;
     padding: .75rem 1rem .25rem;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+
+.contact__content:focus-within {
+    border-color: var(--first-color);
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .contact__label{
@@ -530,7 +540,7 @@ img{
 
 .contact__input{
     width: 100%;
-    background-color: var(--input-color);
+    background-color: transparent;
     color: var(--text-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -540,11 +550,18 @@ img{
 }
 
 .contact_form {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .contact_inputs {
     grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__form .button {
+    border: none;
+    cursor: pointer;
+    font-family: var(--body-font);
 }
 
 @media screen and (max-width: 350px){
@@ -859,7 +876,7 @@ img{
         margin: 0;
     }
     .section{
-        padding: 6rem 0 2rem;
+        padding: 4rem 0 3rem;
     }
 
     .section__subtitle{
@@ -954,10 +971,9 @@ img{
     /* .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
     } */
-    .home__container{ 
-        margin-top: -120px;
+    .home__container{
+        /* margin-top: -120px; */
     }
-
     .section{
         /* padding: 2rem 0 4rem ; */
         /* margin-top: 1,5rem;

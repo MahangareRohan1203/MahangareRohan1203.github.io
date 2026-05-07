@@ -1,42 +1,50 @@
 {
-  "RESUME_URL": "https://drive.google.com/file/d/1f434RgatDd1isJLTYSi-N38m_qSviqPO/view?usp=sharing",
-  "RESUME_URL_DOWNLOAD_DIRECT_LINK": "https://drive.google.com/uc?export=download&id=1f434RgatDd1isJLTYSi-N38m_qSviqPO",
-  "PROJECTS": [
-    {
-      "title": "Streamspehere",
-      "image": "./Extras/VeggieMarket.png",
-      "description": "Video Streaming Platform",
-      "techStack": "Java | SpringBoot | PostgreSQL | Eureka ",
-      "github": "https://github.com/MahangareRohan1203/streamsphere",
-      "link": "https://drive.google.com/drive/folders/1_tH1wN5v6ublnhkgzmkQoKlLSJ6L-JRK?usp=drive_link",
-      "linkLabel": "Video"
-    },
-    {
-      "title": "El Pollo Loco Clone",
-      "image": "./Extras/ElPolloLoco.png",
-      "description": "Online food delivery website",
-      "techStack": "HTML | CSS | JavaScript",
-      "github": "https://github.com/MahangareRohan1203/El-Pollo-Loco-Clone",
-      "link": "https://64c1694b81a48f008a27ab69--tubular-stroopwafel-9a2a78.netlify.app/",
-      "linkLabel": "Deployed"
-    },
-    {
-      "title": "JeFit Clone",
-      "image": "./Extras/Befit.png",
-      "description": "Gym Training & Community Building Website",
-      "techStack": "HTML | CSS | JavaScript",
-      "github": "https://github.com/MahangareRohan1203/damaged-foot-4937",
-      "link": "https://befit2.netlify.app/",
-      "linkLabel": "Deployed"
-    },
-    {
-      "title": "Crime Information Management System",
-      "image": "./Extras/CrimeInfo.png",
-      "description": "Maintain Integrated data of Crime & Criminals",
-      "techStack": "Java | JDBC | MySQL",
-      "github": "https://github.com/MahangareRohan1203/puny-leather-5605",
-      "link": "https://drive.google.com/drive/folders/1TwH_HC35iOmNbGDVx_hDW-0mT_TBDUTM",
-      "linkLabel": "Video"
-    }
-  ]
+    "NAME": "Rohan Mahangare",
+    "ROLE": "Java Backend Developer",
+    "HOME_DESCRIPTION": "Passionate Java Backend developer with expertise in MySQL, Microservices, Linux, Spring AI, Kafka.",
+    "TYPED_STRINGS": [
+        "A Full Stack Developer",
+        "A Java Backend Developer",
+        "A Sport Enthusiast"
+    ],
+    "RESUME_URL": "https://drive.google.com/file/d/1f434RgatDd1isJLTYSi-N38m_qSviqPO/view?usp=sharing",
+    "RESUME_URL_DOWNLOAD_DIRECT_LINK": "https://drive.google.com/uc?export=download&id=1f434RgatDd1isJLTYSi-N38m_qSviqPO",
+    "PROJECTS": [
+        {
+            "title": "Streamspehere",
+            "image": "./Extras/VeggieMarket.png",
+            "description": "Video Streaming Platform",
+            "techStack": "Java | SpringBoot | PostgreSQL | Eureka ",
+            "github": "https://github.com/MahangareRohan1203/streamsphere",
+            "link": "https://drive.google.com/drive/folders/1_tH1wN5v6ublnhkgzmkQoKlLSJ6L-JRK?usp=drive_link",
+            "linkLabel": "Video"
+        },
+        {
+            "title": "El Pollo Loco Clone",
+            "image": "./Extras/ElPolloLoco.png",
+            "description": "Online food delivery website",
+            "techStack": "HTML | CSS | JavaScript",
+            "github": "https://github.com/MahangareRohan1203/El-Pollo-Loco-Clone",
+            "link": "https://64c1694b81a48f008a27ab69--tubular-stroopwafel-9a2a78.netlify.app/",
+            "linkLabel": "Deployed"
+        },
+        {
+            "title": "JeFit Clone",
+            "image": "./Extras/Befit.png",
+            "description": "Gym Training & Community Building Website",
+            "techStack": "HTML | CSS | JavaScript",
+            "github": "https://github.com/MahangareRohan1203/damaged-foot-4937",
+            "link": "https://befit2.netlify.app/",
+            "linkLabel": "Deployed"
+        },
+        {
+            "title": "Crime Information Management System",
+            "image": "./Extras/CrimeInfo.png",
+            "description": "Maintain Integrated data of Crime & Criminals",
+            "techStack": "Java | JDBC | MySQL",
+            "github": "https://github.com/MahangareRohan1203/puny-leather-5605",
+            "link": "https://drive.google.com/drive/folders/1TwH_HC35iOmNbGDVx_hDW-0mT_TBDUTM",
+            "linkLabel": "Video"
+        }
+    ]
 }
