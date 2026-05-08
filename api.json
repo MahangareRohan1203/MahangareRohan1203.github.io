@@ -12,7 +12,7 @@
     "PROJECTS": [
         {
             "title": "Streamspehere",
-            "image": "./Extras/VeggieMarket.png",
+            "image": "./Extras/streamsphere-hero.png",
             "description": "Video Streaming Platform",
             "techStack": "Java | SpringBoot | PostgreSQL | Eureka ",
             "github": "https://github.com/MahangareRohan1203/streamsphere",

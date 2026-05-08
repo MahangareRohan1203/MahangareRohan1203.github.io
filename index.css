@@ -70,6 +70,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -78,6 +79,7 @@ body{
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color:var(--text-color);
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4{
@@ -278,7 +280,7 @@ img{
     margin-bottom: var(--mb-0-75);
 }
 
-.home__description{
+.home_description{
     margin-bottom: var(--mb-2);
 }
 
@@ -433,7 +435,7 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
-    margin: 0.5rem 0 1.5rem;
+    margin: 1.5rem 0 1.5rem;
     text-align: center;
     width: 100%;
 }
@@ -456,7 +458,7 @@ img{
     background-color: var(--container-color);
     transition: .3s;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    min-height: 140px;
 }
 
 .skills-card:hover {
@@ -469,12 +471,18 @@ img{
     margin-top: 0.5rem;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 @media screen and (max-width: 767px) {
     .skills__group {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+    .skills-card {
+        padding: 0.75rem;
+        min-height: 120px;
     }
 }
 
@@ -491,40 +499,47 @@ img{
     row-gap: 3rem;
 }
 
-.contact__information{
+.contact__information {
     display: flex;
     margin-bottom: var(--mb-2);
 }
 
-.contact_message {
-    text-align: left;
-    color: var(--text-color-light);
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-2);
-}
-
-.contact__icon{
+.contact__icon {
     font-size: 2rem;
-    color:var(--first-color);
+    color: var(--first-color);
     margin-right: var(--mb-0-75);
 }
 
-.contact__title{
+.contact__title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
 
-.contact__subtitle{
+.contact__subtitle {
     font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
 
-.contact__content{
+.contact__form-card {
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.contact__inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+    margin-bottom: var(--mb-1-5);
+}
+
+.contact__content {
     background-color: var(--input-color);
-    border-radius: .75rem;
-    padding: .75rem 1rem .25rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem 0.25rem;
     border: 1px solid transparent;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .contact__content:focus-within {
@@ -533,35 +548,28 @@ img{
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.contact__label{
+.contact__label {
     font-size: var(--smaller-font-size);
     color: var(--title-color);
 }
 
-.contact__input{
+.contact__input {
     width: 100%;
     background-color: transparent;
     color: var(--text-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    border:none;
+    border: none;
     outline: none;
-    padding: .25rem .5rem .5rem 0;
-}
-
-.contact_form {
-    width: 100%;
-    max-width: 500px;
-}
-
-.contact_inputs {
-    grid-template-columns: repeat(2, 1fr);
+    padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
 .contact__form .button {
     border: none;
     cursor: pointer;
     font-family: var(--body-font);
+    width: 100%;
+    justify-content: center;
 }
 
 @media screen and (max-width: 350px){
@@ -832,13 +840,12 @@ img{
         grid-template-columns: .25fr 3fr ;
     }
     .home__blob{
-        width: 180px;
+        width: 160px;
     }
 
-    #skills{
-        display: grid;
+    .skills__group{
         grid-template-columns: repeat(2,1fr);
-        gap: 20px;
+        gap: 10px;
     }
     
 
@@ -964,7 +971,7 @@ img{
         transform: translateX(-6rem);
     }
 
-    .contact_form{
+    .contact__form-card{
         width: 460px;
     }
 
@@ -989,10 +996,9 @@ img{
 
 
 @media screen and (max-width: 768px){
-    #skills{
-        display: grid;
+    .skills__group{
         grid-template-columns: repeat(2,1fr);
-        gap: 20px;
+        gap: 15px;
     }
 
     .stats_container{
